@@ -7,3 +7,10 @@
     background: #5bf946;
     border: 1px solid #36ae26;
 }
+
+/* Depreciado no bootstrap 4 */
+.page-header{
+    border-bottom: 1px solid #80808044;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}

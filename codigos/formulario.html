@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Container responsivo -->
+    <div class="container">
+        <!-- Cabeçalho css da página -->
+        <div class="page-header">
+            <h1>Formulários Bootstrap</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <h3>Cadastre-se</h3>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Informe seu nome" aria-describedat="nomeHelp"/>
+                        <small id="nomeHelp" class="form-text text-muted">Esse será seu nome do perfil</small>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="Informe seu e-mail de contato" aria-describedat="emailHelp"/>
+                        <small id="emailHelp" class="form-text text-muted">Não enviaremos spam, seu email estará em total sigilo.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" id="senha" placeholder="Informe sua senha de login" aria-describedat="senhaHelp"/>
+                        <small id="senhaHelp" class="form-text text-muted">Use pelo menos 1 caractere especial.</small>
+                    </div>
+
+                    <!-- Radio button -->
+                    <div class="form-check form-check-inline">
+                        <label>
+                            <input type="radio" name="opcoesRadio" checked/> Java
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label>
+                            <input type="radio" name="opcoesRadio"/> Angular
+                        </label>
+                    </div>
+
+                    <!-- Checkboxs -->
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Concordo com os termos do serviço, mesmo não lendo o mesmo por completo.</label>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Cadastrar</button>
+                </form>
+            </div>
+
+            <div class="col-sm-4">
+                <h3>Entrar</h3>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail de login" aria-describedat="emailHelp"/>
+                    <small id="emailHelp" class="form-text text-muted">E-mail de casdatro</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="form-control" id="senha" placeholder="Informe sua senha de login" aria-describedat="senhaHelp"/>
+                    <small id="senhaHelp" class="form-text text-muted">Senha escolhida ao criar a conta.</small>
+                </div>
+
+                <button class="btn btn-primary">Entrar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
