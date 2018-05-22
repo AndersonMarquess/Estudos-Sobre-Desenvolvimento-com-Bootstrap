@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Imagens responsivas - Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Container responsivo -->
+    <div class="container">
+
+        <div class="page-header">
+            <h1>Imagens Bootstrap</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Imagem Responsiva</h3>
+                <img src="../imagens/uvas.png" class="img-fluid" alt="Imagem responsiva de teste"/>
+            </div>
+            <div class="col-sm-6">
+                <h3>Imagem Não Responsiva</h3> 
+                <img src="../imagens/uvas.png" />
+            </div>
+        </div><!--Fim da row-->
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Formas em imagens</h3>
+                <!-- Imagem Circular -->
+                <img src="../imagens/uvas200.png" class="rounded-circle img-thumbnail"/>
+                <img src="../imagens/uvas200.png" class="rounded-circle"/>
+                <!-- Imagem com borda arredondada -->
+                <img src="../imagens/uvas200.png" class="rounded"/>
+                <!-- Imagem com borda branca -->
+                <img src="../imagens/uvas200.png" class="img-thumbnail"/>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
