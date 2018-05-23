@@ -53,12 +53,12 @@ body {
 }
 
 /* cor padrão do link */
-.navbar-dark .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link, footer .fnav a{
     color: white;
 }
 
 /* Quando em cima do link ele muda a cor do mesmo */
-.navbar-dark .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link:hover,  footer .fnav a:hover {
     color: #9bf0e1;
 }
 
@@ -140,6 +140,17 @@ body {
     padding-left: 80px;
 }
 
+/* * * * * * * * * * * * * * *Rodapé* * * * * * * * * * * * * * */
+footer {
+    background: #000;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+.item-rede-social {
+    float: right;
+    margin: 10px;
+}
 
 /* *==========================Tipografia==========================* */
  h1 {
@@ -171,4 +182,18 @@ body {
 
 #recursos h3 {
     color:#9bf0e1;
+}
+
+footer h4 {
+    color: #919496;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.fnav {
+    margin: 0;
+    padding: 0;
+    
+    /* Remover as marcações da lista */
+    list-style-type: none;
 }
