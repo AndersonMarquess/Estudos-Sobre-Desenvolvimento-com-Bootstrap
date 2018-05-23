@@ -2,15 +2,83 @@
 *
 *
 */
-/* * * * *Barra de navegação* * * * */
+/* *==========================Layout==========================* */
+
+/* Todas essas tag's terão uma altura de 100% */
+html, body, .capa {
+    height: 100%;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Varias imagens de background */
+    background: url("../../imagens/capa.png"), 
+                url("../../imagens/ruido.png"),
+                linear-gradient(50deg, #ff4169, #7c26f8);
+
+    /* Deixa o background parado */
+    background-attachment: fixed;
+}
+
+
+/* * * * * * * * * * * * * * *Barra de navegação* * * * * * * * * * * * * * */
 .img-logo {
     height: 40px;
     width: 132px;
     display: block;
     background: url("../../imagens/spotify.svg") no-repeat;
-    border: 1px solid red;
 
-    background-size: contain;/*Define que a imagem de fundo terá o mesmo tamanho que o definido na classe css*/
-    color: transparent;/*O Texto fica transparente e visível aos leitores de tela*/
+    /*Define que a imagem de fundo terá o mesmo tamanho que o definido na classe css*/
+    background-size: contain;
+    /*O Texto fica transparente e visível aos leitores de tela*/
+    color: transparent;
 }
 
+.navbar-transparente {
+    padding: 15px 0px;
+    /*aplica 60% de transparência ao elemento */
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.divisor {
+    width: 1px;
+    height: 16px;
+    background: white;
+    margin: 14px 10px;
+}
+
+/* cor padrão do link */
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+/* Quando em cima do link ele muda a cor do mesmo */
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #9bf0e1;
+}
+
+
+/* * * * * * * * * * * * * * *Imagem de capa* * * * * * * * * * * * * * */
+.capa {
+    /* Comportamento de tabela */
+    display: table;
+    width: 100%;
+}
+
+.texto-capa {
+    text-align: center;
+    color: white;
+    
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* *==========================Tipografia==========================* */
+ h1 {
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: -4px;
+    margin-bottom: 50px;
+ }
