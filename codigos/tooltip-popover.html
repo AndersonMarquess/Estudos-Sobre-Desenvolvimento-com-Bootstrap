@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tooltip e Popover - Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="../fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Necessario para usar o Popover -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+        crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <!-- Container responsivo -->
+    <div class="container">
+        <div class="page-header">
+            <h1>Tooltip e Popover - Bootstrap</h1>
+        </div>
+
+        <h3>Tooltip</h3>
+        
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" title="Detalhes do item">
+            Dica
+        </button>
+
+        <br/><br/>
+
+        <div class="btn-toolbar">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default" data-toggle="tooltip" title="Voltar 15 segundo">
+                    <span class="fas fa-backward"></span>
+                </button>
+                <button type="button" class="btn btn-default" data-toggle="tooltip" title="Reproduzir">
+                    <span class="fas fa-play"></span>
+                </button>
+                <button type="button" class="btn btn-default" data-toggle="tooltip" title="Avançar 15 segundos">
+                    <span class="fas fa-forward"></span>
+                </button>
+            </div>
+        </div>
+        
+
+        <h3>Popover</h3>
+        <button type="button" class="btn btn-lg btn-danger" data-placement="bottom"
+            data-toggle="popover" data-trigger="focus"
+            title="header popover" data-content="corpo do popover, aqui aparece as informações desejadas...">
+            Detalhes
+        </button>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script type="text/JavaScript">
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+        
+        // Fecha o popover ao perder o foco ou clicar fora.
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+        })
+
+
+    </script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    
+</body>
+
+</html>
