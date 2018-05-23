@@ -20,6 +20,9 @@ body {
 
     /* Deixa o background parado */
     background-attachment: fixed;
+
+    /* Remove a barra horizontal */
+    overflow-x: hidden;
 }
 
 
@@ -121,6 +124,22 @@ body {
 .albuns {
     padding: 10px 0px 10px 0px;
 }
+/* * * * * * * * * * * * * * *Seção de recursos* * * * * * * * * * * * * * */
+#recursos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.rotacionar {
+    /* Rotaciona em 30 graus */
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    padding-left: 80px;
+}
+
 
 /* *==========================Tipografia==========================* */
  h1 {
@@ -131,14 +150,14 @@ body {
  }
 
  h2 {
-     padding-top: 15px;
+     /* padding-top: 15px; */
      font-size: 50px;
      font-weight: 700;
      letter-spacing: -2px;
  }
 
  h3 {
-     padding-top: 20px;
+     /* padding-top: 20px; */
      font-size: 35px;
      font-weight: 700;
      letter-spacing: -2px;
@@ -146,6 +165,10 @@ body {
 
 
  /* Formatamos TODOS os h2 e h3 presente na onde o id é "servicos", deixando os outros intactos. */
-#servicos h2, #servicos h3{
+#servicos h2, #servicos h3 {
     color:#7c25f8;
+}
+
+#recursos h3 {
+    color:#9bf0e1;
 }
