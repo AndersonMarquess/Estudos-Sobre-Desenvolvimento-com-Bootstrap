@@ -7,6 +7,7 @@
 /* Todas essas tag's terão uma altura de 100% */
 html, body, .capa {
     height: 100%;
+    overflow: auto;
 }
 
 body {
@@ -87,11 +88,8 @@ body {
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
 
-    padding: 10px 35px;
-
     /* Todas as letras em maiúsculas */
     text-transform: uppercase;
-    margin: 0px 15px;
 
     /* Transição para trocar o background e sua cor */
     transition: background 0.5s, color 0.5s;
@@ -154,7 +152,6 @@ footer {
 
 /* *==========================Tipografia==========================* */
  h1 {
-    font-size: 150px;
     font-weight: 900;
     letter-spacing: -7px;
     margin-bottom: 50px;
@@ -197,3 +194,56 @@ footer h4 {
     /* Remover as marcações da lista */
     list-style-type: none;
 }
+
+/*==========Media queries========*/
+
+
+/*================Fim media queries================*/
+
+/* Media queries */
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+    h1 {
+        text-align: unset;
+        font-size: 40px; 
+        letter-spacing: -2px;
+        /* overflow-wrap: break-word; */
+    }
+    .btn-custom {
+        margin: 10px 0px;
+        overflow-wrap: break-word;
+        font-size: 70%;
+    }
+    footer .img-logo {
+        margin-bottom: 10px;
+    }
+    footer .item-rede-social {
+        float: left;
+    }
+
+    #recursos .img-fluid{
+        display: none;
+    }
+}
+/* sm >= 768 */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 70px; 
+    }
+    .btn-custom {
+        margin: 10px 15px;
+    }
+}
+/* md >= 992 */
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 80px; 
+    }
+}
+/* lg >= 1200*/
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 100px; 
+    }
+}
+/* Fim Media queries *
