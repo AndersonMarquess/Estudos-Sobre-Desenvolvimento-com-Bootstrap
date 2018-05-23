@@ -75,10 +75,46 @@ body {
     vertical-align: middle;
 }
 
+/* * * * * * * * * * * * * * *Botões* * * * * * * * * * * * * * */
+.btn-custom {
+    color: white;
+
+    /* arredondamento */
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+
+    padding: 10px 35px;
+
+    /* Todas as letras em maiúsculas */
+    text-transform: uppercase;
+    margin: 0px 15px;
+
+    /* Transição para trocar o background e sua cor */
+    transition: background 0.5s, color 0.5s;
+}
+
+.btn-roxo {
+    background: #841cb4;
+}
+.btn-roxo:hover {
+    background: #6207e3;
+    color: white;
+}
+
+.btn-branco {
+    border: 2px solid white;
+}
+.btn-branco:hover {
+    border: 2px solid white;
+    background: white;
+    color: black;
+}
+
 /* *==========================Tipografia==========================* */
  h1 {
-    font-size: 100px;
+    font-size: 150px;
     font-weight: 900;
-    letter-spacing: -4px;
+    letter-spacing: -7px;
     margin-bottom: 50px;
  }
