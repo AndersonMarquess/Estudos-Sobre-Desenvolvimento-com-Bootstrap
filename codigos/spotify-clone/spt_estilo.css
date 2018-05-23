@@ -111,6 +111,17 @@ body {
     color: black;
 }
 
+/* * * * * * * * * * * * * * *Seção de serviços* * * * * * * * * * * * * * */
+#servicos {
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.albuns {
+    padding: 10px 0px 10px 0px;
+}
+
 /* *==========================Tipografia==========================* */
  h1 {
     font-size: 150px;
@@ -118,3 +129,23 @@ body {
     letter-spacing: -7px;
     margin-bottom: 50px;
  }
+
+ h2 {
+     padding-top: 15px;
+     font-size: 50px;
+     font-weight: 700;
+     letter-spacing: -2px;
+ }
+
+ h3 {
+     padding-top: 20px;
+     font-size: 35px;
+     font-weight: 700;
+     letter-spacing: -2px;
+ }
+
+
+ /* Formatamos TODOS os h2 e h3 presente na onde o id é "servicos", deixando os outros intactos. */
+#servicos h2, #servicos h3{
+    color:#7c25f8;
+}
